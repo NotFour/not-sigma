@@ -24,7 +24,7 @@ body {
 }
 
 .link:hover {
-    color: #c00;
+    text-decoration: underline;
 }
 
 .header {
@@ -105,24 +105,9 @@ body {
 }
 
 .logo {
+    float: left;
     width: 300px;
-    float: left;
-}
-
-.logo__box:nth-child(1) {
-    float: left;
-    margin-right: 3px;
     margin-top: 8px;
-}
-
-.logo__box:nth-child(2) {
-    float: left;
-    margin-top: 11px;
-}
-
-.logo__box:nth-child(3) {
-    float: right;
-    margin-right: 5px;
 }
 
 .basket {
@@ -219,7 +204,42 @@ body {
 .menu__inner {
     height: 40px;
     margin-top: 11px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.menu__icon {
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__icon_company {
+    width: 90px;
+    background-image: url("../img/1c.png");
+}
+
+.menu__icon_services {
+    width: 50px;
+    background-image: url("../img/services.png");
+}
+
+.menu__icon_equipment {
+    width: 54px;
+    background-image: url("../img/equipment.png");
+}
+
+.menu__icon_software {
+    width: 58px;
+    background-image: url("../img/software.png");
+}
+
+.menu__icon_servicing {
+    width: 66px;
+    background-image: url("../img/it-servicing.png");
 }
 
 .menu__item:nth-child(1) {
@@ -273,7 +293,6 @@ body {
 .categories__list {
     line-height: 24px;
     list-style: none;
-
 }
 
 .category .categories__list {
@@ -312,6 +331,10 @@ body {
     color: #003280;
     text-decoration: underline;
     text-align: left;
+}
+
+.product__name:hover {
+    color: orangered;
 }
 
 .product__picture {
