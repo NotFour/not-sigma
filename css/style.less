@@ -1,0 +1,46 @@
+@import 'header.less';
+@import 'main-container.less';
+@import 'footer.less';
+
+.path(@name){
+  @default-path: "../img/";
+  background-image: url("@{default-path}@{name}");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background: linear-gradient(to top, #a2c6ea, #e4ecf4);
+  color: #222222;
+}
+
+.page {
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 115px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #222222;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.clear-fix:after {
+  content: '';
+  display: block;
+  clear: both;
+}

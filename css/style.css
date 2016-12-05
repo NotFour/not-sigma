@@ -6,8 +6,8 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    color: #fb9f18;
     background: linear-gradient(to top, #a2c6ea, #e4ecf4);
+    color: #222222;
 }
 
 .page {
@@ -29,8 +29,8 @@ body {
 
 .header {
     background-color: #ededed;
-    height: 27px;
     padding-top: 10px;
+    padding-bottom: 6px;
 }
 
 .content {
@@ -378,6 +378,7 @@ body {
 }
 
 .product__price span {
+    color: #fb9f18;
     font-weight: bold;
     font-size: 18px;
 }
