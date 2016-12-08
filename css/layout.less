@@ -1,0 +1,56 @@
+.page {
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 115px;
+}
+
+.header {
+  background-color: @header-back;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-container {
+  padding-bottom: 108px;
+}
+
+.main-container__header {
+  margin-bottom: 30px;
+}
+
+.main-container__menu {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: @grad-sigma;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.main-container__column {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.categories {
+  width: 220px;
+}
+
+.footer {
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 30px 0 25px;
+  background-color: @footer-back;
+}

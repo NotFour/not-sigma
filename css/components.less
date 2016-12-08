@@ -1,0 +1,301 @@
+@search-height: 18px;
+
+.header__link:last-child {
+  margin-right: 0;
+}
+
+.header__menu {
+  float: left;
+  font-size: 14px;
+  .link {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.search {
+  float: right;
+  label {
+    float: right;
+    position: relative;
+  }
+}
+
+.search__holder {
+  position: absolute;
+  left: -9999px;
+}
+
+.search__input {
+  border: 0;
+  height: @search-height;
+  width: 270px;
+  background-color: @search__input-back;
+}
+
+.search__button {
+  text-indent: -9999px;
+  position: relative;
+  float: right;
+  height: @search-height;
+  width: 25px;
+  border: 0;
+  border-radius: 0 9px 9px 0;
+  background: @grad-sigma;
+  i {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    .path("search-icon.png");
+    background-repeat: no-repeat;
+    left: 4px;
+    top: 2px;
+  }
+}
+
+.logo {
+  float: left;
+  width: 300px;
+  margin-top: 8px;
+}
+
+.basket {
+  border: 0;
+  float: right;
+  width: 220px;
+  height: 70px;
+  text-align: center;
+  background: @grad-sigma;
+  cursor: pointer;
+}
+
+.auth {
+  font-size: 18px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 112%;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top: 18px solid @basket-tri;
+  }
+  span {
+    color: @default;
+  }
+}
+
+.contacts {
+  float: right;
+  margin-right: 45px;
+  margin-top: 12px;
+}
+
+.telephone {
+  text-align: right;
+  margin-bottom: 7px;
+}
+
+.telephone__code {
+  color: @telephone__code;
+  font-size: 20px;
+}
+
+.telephone__number {
+  color: @numprice;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.telephone__code, .telephone__number {
+  display: inline-block;
+}
+
+.menu__inner {
+  height: 40px;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.menu__icon {
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu__icon_company {
+  width: 90px;
+  .path("1c.png");
+}
+
+.menu__icon_services {
+  width: 50px;
+  .path("services.png");
+}
+
+.menu__icon_equipment {
+  width: 54px;
+  .path("equipment.png");
+}
+
+.menu__icon_software {
+  width: 58px;
+  .path("software.png");
+}
+
+.menu__icon_servicing {
+  width: 66px;
+  .path("it-servicing.png");
+}
+
+.categories__box {
+  border-radius: 30px;
+  background: @grad-sigma;
+  padding: 25px 0 25px 15px;
+}
+
+.category {
+  .categories__list {
+    margin-left: 30px;
+    line-height: 31px;
+  }
+}
+
+.products {
+  width: 700px;
+  box-sizing: border-box;
+  background-color: @productsleader;
+  border-radius: 30px;
+  padding-top: 23px;
+  padding-left: 23px;
+}
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  width: 192px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-child(3n+2) {
+    margin-right: 35px;
+  }
+}
+
+.product__picture {
+  height: 130px;
+  text-align: center;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+.status {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 0 10px;
+  right: 0;
+  bottom: 5px;
+  background-repeat: no-repeat;
+}
+
+.status_leader {
+  .path("leader.png");
+  color: @productsleader;
+  padding-top: 26px
+}
+
+.status_stock {
+  .path("stock.png");
+  color: @default;
+  padding-top: 33px;
+}
+
+.product__inner {
+  position: relative;
+  margin-top: 15px;
+}
+
+.product__buy {
+  width: 36px;
+  height: 30px;
+  float: right;
+  position: relative;
+  .link {
+    padding-right: 36px;
+    padding-bottom: 16px;
+  }
+  i {
+    width: 36px;
+    height: 30px;
+    position: absolute;
+    .path("buy.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.pagination {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 30px;
+  .link {
+    font-size: 18px;
+    margin-right: 13px;
+    &:last-child {
+      margin-right: 24px;
+    }
+    &:first-child, &:last-child {
+      position: relative;
+      padding-right: 15px;
+    }
+  }
+}
+
+.pagination__switch {
+  width: 15px;
+  height: 26px;
+  position: absolute;
+  bottom: -3px;
+  background-repeat: no-repeat;
+}
+
+.pagination__switch_back {
+  .path("back.png");
+}
+
+.pagination__switch_forward {
+  .path("forward.png");
+}
+
+.footer__menu {
+  font-size: 14px;
+  margin-bottom: 30px;
+  .link {
+    margin-right: 17px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__inner {
+  color: @footer__inner;
+}
+
+.company {
+  float: left;
+}
+
+.work {
+  float: right;
+}
